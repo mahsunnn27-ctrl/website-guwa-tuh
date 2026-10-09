@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #00c9a7,
+        #0077b6
+    );
+}
+
+/* Kotak utama */
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card */
+
+.card {
+    max-width: 430px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+
+    animation: muncul 0.7s ease;
+}
+
+/* Emoji */
+
+.emoji {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+/* Judul */
+
+h1 {
+    margin: 5px 0 10px;
+
+    color: #00796b;
+
+    font-size: 32px;
+}
+
+/* Tulisan */
+
+.judul {
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.deskripsi {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+/* Kotak QR */
+
+.qr-box {
+    display: inline-block;
+
+    margin: 20px 0;
+
+    padding: 15px;
+
+    background-color: white;
+
+    border: 3px solid #00a896;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* QR Code */
+
+.qr-box img {
+    display: block;
+
+    width: 250px;
+    height: 250px;
+
+    object-fit: contain;
+}
+
+/* Peringatan */
+
+.peringatan {
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background-color: #e8f8f5;
+
+    color: #00695c;
+
+    font-size: 13px;
+}
+
+/* Tombol */
+
+button {
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #00796b;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi */
+
+@keyframes muncul {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #222;
+
+    font-family: Arial, sans-serif;
+}
+
+.game {
+    text-align: center;
+
+    background-color: #9bbc0f;
+
+    padding: 25px;
+
+    border: 8px solid #333;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px black;
+}
+
+h1 {
+    margin-top: 0;
+
+    color: #0f380f;
+
+    font-family: monospace;
+}
+
+.score {
+    margin-bottom: 15px;
+
+    color: #0f380f;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* =====================
+   AREA GAME
+===================== */
+
+.game-container {
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+
+    margin: auto;
+}
+
+canvas {
+    display: block;
+
+    background-color: #8bac0f;
+
+    border: 5px solid #306230;
+}
+
+
+/* =====================
+   COUNTDOWN
+===================== */
+
+#countdown {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #0f380f;
+
+    font-size: 70px;
+
+    font-family: monospace;
+
+    font-weight: bold;
+
+    background-color: rgba(155, 188, 15, 0.7);
+
+    pointer-events: none;
+}
+
+
+/* =====================
+   TOMBOL
+===================== */
+
+button {
+    margin-top: 20px;
+
+    padding: 10px 25px;
+
+    border: 3px solid #0f380f;
+
+    background-color: #306230;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f380f;
+}
+
+
+/* Petunjuk */
+
+p {
+    color: #0f380f;
+
+    font-family: monospace;
+
+    font-weight: bold;
+}
+/* =====================
+   PREMIUM POPUP
+===================== */
+
+#premiumPopup {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(15, 56, 15, 0.85);
+}
+
+.premiumBox {
+    width: 320px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 5px solid wheat;
+
+    box-shadow: 0 8px 20px black;
+}
+
+.premiumBox h2 {
+    color: #0f380f;
+
+    font-family: monospace;
+}
+
+.premiumBox p {
+    color: #0f380f;
+
+    font-family: Arial, sans-serif;
+}
+button
+.price {
+    margin: 15px 0;
+
+    padding: 10px;
+
+    background-color: cyan;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.joke {
+    font-size: 13px;
+}
+
+.premiumBox button {
+    margin-top: 10px;
+
+    padding: 10px 20px;
+
+    border: 3px solid cyan;
+
+    background-color: cyan;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.premiumBox button:hover {
+    background-color: darkcyan;
+}
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-top: 0;
+}

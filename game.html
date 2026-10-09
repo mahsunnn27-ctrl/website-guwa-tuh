@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Nokia 🐍</title>
+
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>🐍 LAR OLARAN</h1>
+
+        <div class="score">
+            SKOR: <span id="score">0</span>
+        </div>
+
+        <!-- Area game -->
+        <div class="game-container">
+
+            <canvas
+                id="gameCanvas"
+                width="400"
+                height="400">
+            </canvas>
+
+            <div id="premiumPopup">
+
+    <div class="premiumBox">
+
+        <h2>💳 GAME OVER!</h2>
+
+        <p>
+            Waduh, nyawa kamu habis 😭
+        </p>
+
+        <p>
+            Untuk melanjutkan permainan,
+            silakan beli <b>SNAKE PREMIUM</b> 
+        </p>
+
+        <div class="price">
+            <a href="pay.html">
+            <button>Rp999.999.999</button>
+            </a>
+        </div>
+
+        <p class="joke">
+            anda bisa melanjutkan game ini setelah bayar
+        </p>
+
+        <button onclick="playAgain()">
+            BAYAR PAN KAPAN WES
+        </button>
+
+    </div>
+
+</div>
+
+            <!-- Aba-aba -->
+            <div id="countdown">
+                3
+            </div>
+
+        </div>
+
+<div class="buttons">
+
+    <button onclick="togglePause()" id="pauseButton">
+        ⏸️ STOP
+    </button>
+
+    <button onclick="restartGame()">
+        🔄 MULAI LAGI
+    </button>
+
+</div>
+        <p>
+            ⬆️ ⬇️ ⬅️ ➡️
+        </p>
+
+    </div>
+
+    <a href="home1.html">
+        <button> ← kembali</button>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

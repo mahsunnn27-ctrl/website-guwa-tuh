@@ -1,0 +1,397 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #312e81,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #0e7490,
+            transparent 40%
+        ),
+        #020617;
+
+    color: white;
+}
+
+
+/* =========================
+   BULATAN BACKGROUND
+========================= */
+
+.circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(5px);
+
+    opacity: 0.5;
+}
+
+.circle1 {
+    width: 250px;
+    height: 250px;
+
+    background: #00ffff;
+
+    top: -80px;
+    left: -80px;
+}
+
+.circle2 {
+    width: 300px;
+    height: 300px;
+
+    background: #8b5cf6;
+
+    bottom: -120px;
+    right: -100px;
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+    position: relative;
+
+    width: 400px;
+
+    padding: 40px;
+
+    background: rgba(15, 23, 42, 0.75);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(0, 255, 255, 0.1);
+
+    animation: muncul 0.7s ease;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.icon {
+    width: 75px;
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 38px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 255, 255, 0.1);
+
+    border: 2px solid #00ffff;
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+    text-align: center;
+
+    margin: 20px 0 8px;
+
+    color: #00ffff;
+
+    text-shadow:
+        0 0 10px #00ffff;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #94a3b8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #cbd5e1;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Input aktif */
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+
+/* =========================
+   REMEMBER
+========================= */
+
+.remember {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+}
+
+.remember label {
+    margin: 0;
+}
+
+.remember input {
+    accent-color: #00ffff;
+}
+
+a {
+    color: #00ffff;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TOMBOL
+========================= */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #06b6d4,
+        #3b82f6
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+
+/* =========================
+   PEMBATAS
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+    color: #64748b;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #334155;
+}
+
+
+/* =========================
+   REGISTER
+========================= */
+
+.register {
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ANIMASI
+========================= */
+
+@keyframes muncul {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 500px) {
+
+    .login-box {
+        width: 90%;
+
+        padding: 30px 25px;
+    }
+
+}
+.password-box {
+    position: relative;
+    width: 100%;
+}
+
+.password-box input {
+    padding-right: 50px;
+}
+
+.eye-button {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 40px;
+
+    padding: 5px;
+
+    margin: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    box-shadow: none;
+}
+
+.eye-button:hover {
+    transform: translateY(-50%);
+
+    background: transparent;
+
+    box-shadow: none;
+}
